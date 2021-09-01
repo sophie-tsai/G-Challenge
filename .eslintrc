@@ -37,7 +37,8 @@
     "page": true,
     "browser": true,
     "context": true,
-    "justPuppeteer": true
+    "jestPuppeteer": true,
+    "JSX": true
   },
   "settings": {
     "react": {

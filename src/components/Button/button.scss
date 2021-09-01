@@ -1,0 +1,101 @@
+@import "../../scss/variables.scss";
+
+.button {
+  border-radius: 24px;
+  padding: 16px 24px;
+  border: none;
+  font-family: Spartan;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 32px auto;
+
+  &.invoice,
+  &.paid {
+    color: white;
+    background: $dark-purple;
+
+    &:hover {
+      background: $purple;
+    }
+  }
+
+  &.invoice {
+    padding: 8px;
+    padding-right: 16px;
+
+    .circle {
+      width: 32px;
+      height: 32px;
+      background: white;
+      margin-right: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .plus_symbol {
+        color: $dark-purple;
+        font-weight: 700;
+        font-size: 13px;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+
+  &.edit {
+    color: $light-mode-text-purple;
+    background: $background-white-purple;
+
+    &:hover {
+      background: $background-light-purple;
+    }
+
+    &.dark_mode {
+      color: $dark-mode-text-purple;
+      background: $background-edit-dark;
+
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+  &.draft {
+    color: $light-mode-text-gray;
+    background: $background-draft-dark-gray;
+
+    &:hover {
+      background: $background-draft-hover-light;
+    }
+
+    &.dark_mode {
+      color: $dark-mode-text-purple;
+
+      &:hover {
+        background: $background-draft-hover-dark;
+      }
+    }
+  }
+
+  &.delete {
+    color: white;
+    background: $dark-orange;
+
+    &:hover {
+      background: $light-orange;
+    }
+  }
+
+  &.item {
+    padding: 16px 115px;
+    color: $light-mode-text-purple;
+    background: $background-white-purple;
+
+    &:hover {
+      background: $background-light-purple;
+    }
+  }
+}
